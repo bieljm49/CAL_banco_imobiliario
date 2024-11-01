@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5" style="background-color: #FFDDC1;">
+    <h2>Jogador 3</h2>
+    <p>Saldo atual: ${{ data.saldo }}</p>
+    
+    <form method="POST">
+        <input type="number" name="valor" placeholder="Valor" required>
+        <button type="submit" name="tipo" value="adicionar" class="btn btn-success">Adicionar</button>
+        <button type="submit" name="tipo" value="subtrair" class="btn btn-danger">Subtrair</button>
+    </form>
+    
+    <h4>Histórico de Transações</h4>
+    <ul>
+        {% for item in data.historico %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

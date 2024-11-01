@@ -1,0 +1,11 @@
+.container {
+    max-width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+
+/* Cores específicas por jogador */
+body.jogador1 { background-color: #FFDDC1; }
+body.jogador2 { background-color: #C1FFD7; }
+body.jogador3 { background-color: #C1D4FF; }
+body.jogador4 { background-color: #F5C1FF; }
